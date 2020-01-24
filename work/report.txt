@@ -1,0 +1,13 @@
+Assignment 01:
+
+Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
+- Yes. I've previously used git on different projects where i used different git techniques.
+However, the Github pages is pretty new to me.
+
+Have you ever created websites before?
+- Nope.
+
+Briefly explain your experience and knowledge of web application development.
+What is your TIL for this course section?
+- I have pretty limited experience when it comes to web development, however, I am eager to learn and widen my knowledge.
+- My TIL for this course section, is the ability to fork and the github pages technique.
