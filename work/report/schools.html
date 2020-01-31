@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Schools</title>
+
+</head>
+
+
+<body>
+
+    <form>
+            <select id="municipalities" onchange="selectedData();" >
+                <option value= "" disabled selected >Select Kummon</option>
+                <option value = "1442">Malmö</option>
+                <option value = "1281">Lund</option>
+                <option value = "1283" >Helsingborg</option>
+            </select>
+    </form>
+
+    <div class="schoolsInfo">
+
+        <table class="table" style="text-align:center">
+            <thead>
+                <tr>
+                    <th>Kommunkod</th>
+                    <th>PeOrgNr</th>
+                    <th>Skolenhetskod</th>
+                    <th>Skolenhetsnamn</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <hr>
+        
+        <p">
+            <img src="img/duck.png" width="100" height="100" id="duck" onclick="moveTheDuck()" style="float: left;">
+        </p>
+    </footer>
+    
+
+</body>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</html>
