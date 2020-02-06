@@ -1,0 +1,28 @@
+[
+    "accounts": [
+        {
+            "number": 111111,
+            "balance": 111,
+            "label": "Salary",
+            "owner": 11
+        },
+        {
+            "number": 222222,
+            "balance": 222,
+            "label": "Savings",
+            "owner": 22
+        },
+        {
+            "number": 333333,
+            "balance": 333,
+            "label": "Savings travel",
+            "owner": 22
+        },
+        {
+            "number": 42,
+            "balance": 0,
+            "label": "Secret",
+            "owner": 42
+        }
+    ]
+]
