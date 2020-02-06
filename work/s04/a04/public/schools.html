@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Schools</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<header>
+    <nav>
+        <a href="me.html">Me</a> |
+        <a href="report.html">Report</a> | 
+        <a href="about.html">About</a>
+        <a href="schools.html">Schools</a>
+    </nav>
+</header>
+<body>
+
+    <div>
+        <select class="options" id="municipalities" onchange="selectedData();" >
+            <option value= "" disabled selected >Select Kummon</option>
+            <option value = "1442">Malmö</option>
+            <option value = "1281">Lund</option>
+            <option value = "1283" >Helsingborg</option>
+        </select>
+    </div>
+       
+
+    <div class="schoolsInfo">
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Kommunkod</th>
+                    <th>PeOrgNr</th>
+                    <th>Skolenhetskod</th>
+                    <th>Skolenhetsnamn</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <hr>
+        <p><button onclick="hideTheDuck()">Hide The Duck</button></p>
+        <p"><img src="img/duck.png" width="100" height="100" id="duck" onclick="moveTheDuck()"></p>
+    </footer>
+    
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
