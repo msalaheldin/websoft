@@ -16,12 +16,18 @@ namespace jsonBank
         {
             var accounts = ReadAccounts();
 
+            Console.WriteLine("Show all accounts (and add 1 money to their balance)");
             foreach (var account in accounts) {
                 Console.WriteLine(account);
-                Console.WriteLine(account.Balance);
-                //account.Balance = 1;
+                account.Balance += 1;
             }
 
+            Console.WriteLine("The balance has increased by 1");
+            foreach (var account in accounts) {
+                Console.WriteLine(account);
+            }
+
+            Console.WriteLine("Save the updated account balance");
             SaveAccounts(accounts);
         }
 

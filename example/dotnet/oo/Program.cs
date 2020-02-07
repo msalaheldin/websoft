@@ -10,6 +10,8 @@ namespace oo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Instantiate an object and use it, class saved in separate file.");
+
             // Call the constructor that has no parameters.
             var person1 = new Person();
             Console.WriteLine(person1.Name);
