@@ -1,24 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Report from the course sections</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-
-
-
-    <header>
-        <nav>
-            <a href="me.html">Me</a> |
-            <a href="report.html">Report</a> | 
-            <a href="about.html">About</a>
-            <a href="schools.html">Schools</a>
-        </nav>
-    </header>
+<?php
+$pageTitle = "Report"; 
+require __DIR__ . "/view/header.php" 
+?>
 
 
 
@@ -158,17 +141,7 @@ I am aiming for grade 4, I've not really done the flags, but i've managed to do 
 <h2>S10</h2>
 <p>Here is the text for this section.</p>
 </section>
-<p"><img src="img/duck.png" width="100" height="100" id="duck" onclick="moveTheDuck()"></p>
-
-<footer>
-    <hr>
-    <a href="mailto:amir.gissel0016@stud.hkr.se"><img src="img/email icon.jpg" width= "50"alt="email icon">
-    </footer>
 
 </article>
 
-
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+<?php require __DIR__ . "/view/footer.php" ?>
