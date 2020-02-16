@@ -1,0 +1,22 @@
+﻿@page
+@model MoveMoneyModel
+@{
+    ViewData["Title"] = "Money Transfer";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<form method="post" class="mt-3" asp-action="OnPost">
+
+    <input class="form-control input-text" type="text" name="sender" placeholder="Sender" ><br><br>
+    <input class="form-control input-text" type="text" name="receiver" placeholder="Receiver"><br><br>
+    <input class="form-control input-text" type="text" name="amount" placeholder="Amount"><br><br>
+    <button type="submit" class="btn btn-secondary btn-sm" >Send</button>
+</form>
+        
+       
+   
+   
+
+   
+
