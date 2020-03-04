@@ -35,6 +35,53 @@
 
 
 <script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+om etik
+
+Om testning
+
+* exempelprogram htmlphp
+* sql injection multiquery 
+
+* owasp top ten
+
+What is generally meant by injection vulnerabilities are when
+user data is being sent unfiltered to a backend.
+as part of a command.
+a LDAP query.
+. . . a SQL query1
+
+SELECT * FROM movie WHERE title=” OR ’1’=’1’
+
+
+$title = $_POST[’title’];
+6
+7 $querystring = "SELECT ∗ FROM movie WHERE title=’" . $title . "’";
+8
+9 $result = $mysql−>query($querystring);
+
+The vulnerability lies in the way the SQL query is constructed.
+The SELECT query is constructed based on unwashed user
+provided data.
+
+
+Prepared statements is the way to go.
+Input does not have to be properly escaped
+Input is handled as SQL datatypes.
+
+
+Bobby
+
+Charlie XSS ++
+
+XSRF
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
 # Last words
 
 * Questions on that?
