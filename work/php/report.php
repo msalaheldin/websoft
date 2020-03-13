@@ -59,7 +59,7 @@ require __DIR__ . "/view/header.php"
 </p>
 <p>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?
 <br>- I've watched a few tutorials to understand some main concepts and techniques, it took me quite a lot of time to learn but it was worth it in the end.
-I am aiming for grade 4, I've not really done the flags, but i've managed to do what is required for grade 5.
+I am aiming for grade 5, luckely the code turn to be compiling and does the required functions.
 
 </p>
 <p>What is your TIL for this course section?

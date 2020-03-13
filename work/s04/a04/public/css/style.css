@@ -41,5 +41,42 @@ table {
       float: left;
   }
 
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+  }
+
+  #denmark {
+     background: linear-gradient(to bottom, transparent 40%, white 40%, white 55%, transparent 55%, transparent 100%),
+                 linear-gradient(to right, transparent 30%, white 30%, white 40%, transparent 40%, transparent 100%),
+                  red;
+ }
+
+ #sweden {
+    background: linear-gradient(to bottom, transparent 40%, yellow 40%, yellow 55%, transparent 55%, transparent 100%),
+                linear-gradient(to right, transparent 30%, yellow 30%, yellow 40%, transparent 40%, transparent 100%),
+                 blue;
+}
+#norway {
+    
+      background: linear-gradient(to bottom, transparent 43%, blue 43%, blue 54%, transparent 54%),
+       linear-gradient(to right, transparent 28%, blue 28%, blue 37%, transparent 37%),
+        linear-gradient(to right, transparent 25%, white 25%, white 40%, transparent 40%),
+         linear-gradient(to bottom, transparent 38%, white 38%, white 59%, transparent 59%),
+          red; 
+
+          
+}
+
+
  
  
