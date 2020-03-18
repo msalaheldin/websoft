@@ -249,7 +249,23 @@ I also go to know a list of the most popular programming languages.
 
 <section>
 <h2>S10</h2>
-<p>Here is the text for this section.</p>
+<p>Write your own personal report by answering and reflecting on these questions. Write freely.</p>
+<p>Write a general paragraph about how the project was implemented. Problems / solutions / simple / difficult / fast / long time, etc. Was the project easy or difficult? Did it take a long time? What was difficult and what went easy? Was this a good and reasonable project for this course? How was it to work in a team?
+<br>-	The project was implemented using asp.net technique. Initially, the group decided on using php to develop the project, however, we ran into some difficulties, as we lacked a lot of knowledge. We found out early in the development plan that asp.net is a much better option for us, as we have better experience programming in C#.
+Another challenge was implementing a web socket server to pass the communication between the clients. We have previously worked with sockets, however, that was in java. I was, personally, responsible for the web socket implementation. It took me quite a while to understand how to implement it using asp.net through signalR which was a great help. 
+<br> Another challenge was the database communication, as our project follows the MVC design pattern, in which controllers and database communicate and then the data is passed to the views and models through the controller. We managed to do so, however, it could have been easier through using the built-in databases in visual studio (MSSQL), however, due to the changes between version 2017 and 2019, and most of the tutorials were in the older versions, we stumbled into some difficulties. As a result, we ended up using a local database on MySQL server, and had it working perfectly.
+<br> After gaining more knowledge and experience, the project development picked some speed and things went a bit faster compared to the start.
+Working in a team was very good and beneficial, as we have previously worked on projects together, making us a solid team who know each other’s strengths and weaknesses.
+</p>
+<p>Finish with a final paragraph with your thoughts on the course and what you think about the material and the guide (about 5-10 sentences). Provide feedback to teachers and suggest any improvement suggestions for upcoming course opportunities. Are you satisfied / dissatisfied? Will you recommend the course to your friends / colleagues? On a scale of 1-10, what grade do you give the course?
+    <br>-	The course has great potential, however, there is room for improvements, such as focusing on one specific technique and master it or upgrading it to 15hp and giving each technique a good time to be taught and practiced by students. As a student, it was a bit challenging to learn something completely new every lecture, and then jump to another in the following lecture. Again, it feels like the course is a bit crowded, with all the assignments and different techniques and programming languages in addition to project work and a written examination.
+    <br> I’d definitely recommend a newer version of the course to anyone who’s interested in web development.
+    <br> I am not really satisfied because, I know the course has great potential and could have been better.
+    <br> If 1 is very bad and 10 is very good, I’d give this course a 4.
+</p>
+<p>What is your final TIL for this course?
+<br>- My TIL for this section is without a doubt implementing WebSocket in asp.net using signalR libraries. 
+</p>
 </section>
 
 </article>
