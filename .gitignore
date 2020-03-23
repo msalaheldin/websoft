@@ -1,6 +1,8 @@
 # nodejs
 node_modules/
 package-lock.json
+archive/
+inspect/
 
 # dotnet
 project.lock.json

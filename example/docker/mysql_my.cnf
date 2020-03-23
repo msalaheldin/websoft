@@ -1,8 +1,9 @@
 [client]
 #host = mariadb
-host = mysql
+host = mysql_websoft
 protocol = tcp
 #port = 13306
+user = user
 
 [mysql]
 loose-local-infile = 1

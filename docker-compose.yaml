@@ -15,8 +15,9 @@ services:
             - "/home/dbwebb/repo/build"
             - "/home/dbwebb/repo/node_modules"
             - "/home/dbwebb/repo/vendor"
-            - "./example/docker/my.cnf:/home/dbwebb/.my.cnf"
+            - "./example/docker/mysql_my.cnf:/home/dbwebb/.my.cnf"
 
+    # Use this to expose node and dotnet servers
     cli:
         <<: *websoft
         #image: dbwebb/courserepo:cli
@@ -24,11 +25,22 @@ services:
         # volumes:
         #     - ".:/home/dbwebb/repo"
         #     - "./example/sql/inspect/my.cnf:/home/dbwebb/.my.cnf"
+        ports:
+            - "1337:1337"
+            - "3000:3000"
+            - "5000:5000"
 
     server:
         <<: *websoft
+        image: dbwebb/courserepo
+        # ports:
+        #     - "8888:80"
+
+    apache:
+        <<: *websoft
+        image: dbwebb/courserepo:apache
         ports:
-            - "1337:1337"
+            - "8888:80"
 
     mariadb:
         container_name: mariadb_websoft
@@ -40,7 +52,7 @@ services:
             MARIADB_ROOT_PASSWORD: pass
         volumes:
             - mariadb_data:/var/lib/mysql
-            - .example//sql.d:/docker-entrypoint-initdb.d
+            - .example/sql.d/mariadb:/docker-entrypoint-initdb.d
             - ./example/docker/mariadb_my.cnf:/root/.my.cnf
 
     mysql:
@@ -54,7 +66,7 @@ services:
             MYSQL_ROOT_PASSWORD: pass
         volumes:
             - mysql_data:/var/lib/mysql
-            - ./example/sql.d:/docker-entrypoint-initdb.d
+            - ./example/sql.d/mysql:/docker-entrypoint-initdb.d
             - ./example/docker/mysql_my.cnf:/root/.my.cnf
 
     linux:
